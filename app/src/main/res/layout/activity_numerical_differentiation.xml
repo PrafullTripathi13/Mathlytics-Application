@@ -1,0 +1,116 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Numerical Differentiation"
+        android:background="#0000FF"
+        android:textSize="20sp"
+        android:layout_gravity="center" />
+
+    <!-- X-Values Input -->
+    <TextView
+        android:id="@+id/x_values_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="X-Values:"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/x_values_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Comma separated x-values"
+        android:layout_marginTop="8dp" />
+
+    <!-- Y-Values Input -->
+    <TextView
+        android:id="@+id/y_values_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Y-Values:"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/y_values_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Comma separated y-values"
+        android:layout_marginTop="8dp" />
+
+    <!-- Method Input -->
+    <TextView
+        android:id="@+id/method_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Method:"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/method_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:entries="@array/Differentiation"/>
+
+    <!-- Step Size Input -->
+    <TextView
+        android:id="@+id/step_size_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Step Size:"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/step_size_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="8dp" />
+
+    <!-- Calculate Button -->
+    <Button
+        android:id="@+id/calculate_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:onClick="calculateNumericalDifferentiation" />
+
+    <!-- Ans Text-->
+    <TextView
+        android:id="@+id/result_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:text="Answer will be displayed here" />
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/option2_1"
+        android:title="Numerical Differentiation" />
+    <item
+        android:id="@+id/option2_2"
+        android:title="Numerical Integration" />
+    <item
+        android:id="@+id/option2_3"
+        android:title="Gauss-Jordan's Method" />
+
+    <item
+        android:id="@+id/option2_4"
+        android:title="Crout's Method" />
+
+    <item
+        android:id="@+id/option2_5"
+        android:title="Gauss-Seidal's Method" />
+
+</menu>

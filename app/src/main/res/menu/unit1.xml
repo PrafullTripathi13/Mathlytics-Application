@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/option1_1"
+        android:title="Bisection Method" />
+    <item
+        android:id="@+id/option1_2"
+        android:title="Regula Falsi Method" />
+    <item
+        android:id="@+id/option1_3"
+        android:title="Newton Raphson Method" />
+
+    <item
+        android:id="@+id/option1_4"
+        android:title="Newton's Forward Interpolation" />
+
+    <item
+        android:id="@+id/option1_5"
+        android:title="Newton's Backward Interpolation" />
+
+    <item
+        android:id="@+id/option1_6"
+        android:title="Newton's Divided Difference" />
+
+    <item
+        android:id="@+id/option1_7"
+        android:title="Lagrange's Formulae" />
+</menu>

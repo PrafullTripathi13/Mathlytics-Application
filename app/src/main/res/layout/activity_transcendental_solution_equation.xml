@@ -1,0 +1,116 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/headingSolTransEqn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bisection Method"
+        android:background="#0000FF"
+        android:textSize="20sp"
+        android:layout_gravity="center" />
+
+    <!-- Equation Input -->
+    <TextView
+        android:id="@+id/equation_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Equation:"
+        android:layout_marginTop="50dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/equation_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/eq"
+        android:layout_marginTop="8dp" />
+
+    <!-- Interval Input -->
+    <TextView
+        android:id="@+id/interval_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Values of a and b:"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <EditText
+            android:id="@+id/interval_start_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="numberDecimal"
+            android:hint="a" />
+
+        <EditText
+            android:id="@+id/interval_end_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="numberDecimal"
+            android:hint="b" />
+    </LinearLayout>
+
+    <!-- Approximation Input -->
+    <TextView
+        android:id="@+id/tolerance_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Approximation:"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/approx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Total no. of approximation"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="8dp" />
+
+    <!-- Calculate Button -->
+    <Button
+        android:id="@+id/calculate_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:background="#00FF00"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:onClick="calculateBisection" />
+
+    <!-- Root Text-->
+    <TextView
+        android:id="@+id/result_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:text="Root of the equation will be displayed here" />
+
+</LinearLayout>

@@ -1,0 +1,89 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Button
+        android:id = "@+id/headingLinearEquation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gauss-Jordan Method"
+        android:background="#0000FF"
+        android:textSize="20sp"
+        android:layout_gravity="center" />
+
+    <!-- Equation1 Input -->
+    <TextView
+        android:id="@+id/equation1_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Equation1:"
+        android:layout_marginTop="50dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/equation1_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="x+2y+3z=10"
+        android:layout_marginTop="8dp" />
+
+    <!-- Equation2 Input -->
+    <TextView
+        android:id="@+id/equation2_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Equation2:"
+        android:layout_marginTop="50dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/equation2_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="2x-3y+z=7"
+        android:layout_marginTop="8dp" />
+
+    <!-- Equation3 Input -->
+    <TextView
+        android:id="@+id/equation3_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Equation3:"
+        android:layout_marginTop="50dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/equation3_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="4x+2y+3z=8"
+        android:layout_marginTop="8dp" />
+
+
+    <!-- Calculate Button -->
+    <Button
+        android:id="@+id/calculate_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:background="#00FF00"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:onClick="calculateBisection" />
+
+</LinearLayout>

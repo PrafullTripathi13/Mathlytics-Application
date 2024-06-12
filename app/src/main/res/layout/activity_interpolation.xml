@@ -1,0 +1,117 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <Button
+        android:id = "@+id/headingInterpolationEqual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forward Interpolation"
+        android:background="#0000FF"
+        android:textSize="20sp"
+        android:layout_gravity="center" />
+
+    <!-- Number of Data Points Input -->
+    <TextView
+        android:id="@+id/num_data_points_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Number of Data Points:"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/num_data_points_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_marginTop="8dp" />
+
+    <!-- X-Values Input -->
+    <TextView
+        android:id="@+id/x_values_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X-Values:"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/x_values_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Comma separated x-values"
+        android:layout_marginTop="8dp" />
+
+    <!-- Y-Values Input -->
+    <TextView
+        android:id="@+id/y_values_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Y-Values:"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/y_values_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Comma separated y-values"
+        android:layout_marginTop="8dp" />
+
+    <!-- Interpolation Point Input -->
+    <TextView
+        android:id="@+id/interpolation_point_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Interpolation Point:"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/interpolation_point_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="8dp" />
+
+    <!-- Calculate Button -->
+    <Button
+        android:id="@+id/calculate_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:onClick="calculateForwardInterpolation" />
+
+    <!-- Ans Text-->
+    <TextView
+        android:id="@+id/result_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:text="Answer will be displayed here" />
+
+</LinearLayout>

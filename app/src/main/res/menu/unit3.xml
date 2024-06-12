@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/option3_1"
+        android:title="Taylor Series Method" />
+    <item
+        android:id="@+id/option3_2"
+        android:title="Euler's Method" />
+    <item
+        android:id="@+id/option3_3"
+        android:title="Euler's Modified Method" />
+
+    <item
+        android:id="@+id/option3_4"
+        android:title="Runge kutta Method" />
+
+    <item
+        android:id="@+id/option3_5"
+        android:title="Milne's Predictor Corrector Method" />
+
+    <item
+        android:id="@+id/option3_6"
+        android:title="Adam's Predictor Corrector Method" />
+
+</menu>
